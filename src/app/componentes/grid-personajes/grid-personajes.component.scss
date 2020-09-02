@@ -1,0 +1,41 @@
+h2{
+    text-align: center;
+}
+#gridPersonas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .personaje{
+        width: 200px;
+        // height: 300px;
+        margin: 7px;
+        border: 1px solid black;
+        padding: 10px;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        &.humano{
+            background-color: lightgreen;            
+        }
+        .dead{
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: red;
+            border: 2px solid red;
+            font-size: 1.2em;
+            transform: rotate(20deg);
+            background-color: rgba(233, 135, 105, 0.612);            
+        }
+    }
+}

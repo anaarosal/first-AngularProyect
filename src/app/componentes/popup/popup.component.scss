@@ -1,0 +1,29 @@
+#global{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+#modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;   
+    background-color: #00000088;
+    .container{
+        width: 50%;
+        background-color: rgba(249, 246, 244, 0.913);
+        height: 230px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 9px;
+        border: 1px solid #fefefe;
+        padding: 10px;
+    }
+}

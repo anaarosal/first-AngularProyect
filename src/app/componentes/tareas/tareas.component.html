@@ -1,0 +1,24 @@
+<div id="todo">
+    <div class="uno">
+        <input placeholder="Introduce tarea" [(ngModel)]="entradaTarea">
+        <button (click)="addTarea()">Añadir</button>
+    </div>
+
+    <div id="porhacer">
+        <h2>Tareas por hacer</h2> 
+
+        <div *ngFor="let cadaTarea of listaPorHacer; let i=index" >
+            {{i}}. {{cadaTarea}}
+            <button (click)="completeTarea(cadaTarea)">COMPLETAR</button>
+        </div>    
+    </div>
+
+    <div id="compl">
+        <h2>Tareas completadas</h2>
+        <div *ngFor="let cadaTarea of listaCompletadas, let indice=index">
+            {{indice}}. {{cadaTarea}}
+            <button (click)="descompletaTarea(cadaTarea, indice)">DESCOMPLETAR</button>
+        </div>    
+    </div>
+
+</div>

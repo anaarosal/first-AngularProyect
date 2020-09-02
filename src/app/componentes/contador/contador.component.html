@@ -1,0 +1,18 @@
+
+<div id="global">
+    <div class="dentro">
+        <h2>CONTADOR</h2>
+
+        <p>{{numeroContador}}</p>
+
+        <div class="par" *ngIf="esPar && this.numeroContador!=0">ES PAR</div>
+        <div class="impar" *ngIf="this.numeroContador%2!=0">ES IMPAR</div>
+        <div class="cero" *ngIf="this.numeroContador==0">El 0 no tiene paridad</div>
+
+        <div id="gridButtons">
+            <button (click)="resta()">-</button>
+            <button (click)="suma()">+</button>
+        </div>    
+    </div>
+
+</div>

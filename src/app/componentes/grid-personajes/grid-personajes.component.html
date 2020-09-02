@@ -1,0 +1,10 @@
+<h2>Api Rick & Morty {{numeroPersonajes}} </h2>
+<!-- https://rickandmortyapi.com/ -->
+
+<div id="gridPersonas">
+    <div class="personaje humano" *ngFor="let cadaPersonajes of listaPersonajes" [ngClass]="{'humano' : cadaPersonajes.species == 'Human'}">
+        {{cadaPersonajes.name}}
+        <img src="{{cadaPersonajes.image}}" >
+        <div class="dead" *ngIf="cadaPersonajes.status =='Dead'">DEAD</div>
+    </div>
+</div>

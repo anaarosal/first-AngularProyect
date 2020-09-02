@@ -1,0 +1,21 @@
+<h1>Polaroid</h1>
+<p id="parentesis">Double tap to mark as favorite</p>
+
+<div id="gridPublis">
+    <div class="publi" *ngFor="let cadaPublicacion of listaPublicaciones" (dblclick)="marcarFav(cadaPublicacion)">
+        <div class="contentimg">
+            <img src="{{cadaPublicacion.urlImagen}}" alt="">
+            <h3>{{cadaPublicacion.titulo}}
+                <span *ngIf="cadaPublicacion.favorito">
+                    *
+                </span>
+            </h3>
+            <p>{{cadaPublicacion.texto}}</p>
+        </div>
+    </div>
+    <div id="gridFormulario">
+        <input placeholder="titulo de la publicacion" [(ngModel)]="datoTitulo" >
+        <button (click)="publicarContenido()">Añadir contenido</button>
+        <p>{{datoTitulo}}</p>
+    </div>
+</div>

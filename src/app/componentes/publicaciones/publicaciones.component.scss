@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+}
+#parentesis{
+    text-align: center;
+}
+#gridPublis{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    .contentimg{
+        border: 1px solid black;
+        padding: 5px;
+        margin: 10px;
+    }
+}
